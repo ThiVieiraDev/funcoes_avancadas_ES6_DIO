@@ -1,5 +1,3 @@
-
-
 // Destructuring Assignment
 var arr = [{ name: 'Apple', type: 'friot' }];
 
