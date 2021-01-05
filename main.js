@@ -8,7 +8,19 @@ console.log(name);
 var [{ name }] = arr;
 console.log(name);
 
+// function
 
+//função recebendo objeto como parâmetro
+function sum ({a, b}) {
+  return a + b;
+}
+console.log(sum({a: 5, b: 5}));
+
+//função recebendo array como parâmetro
+function sum ([a, b]) {
+  return a + b;
+}
+console.log(sum([5, 5]));
 
 
 
