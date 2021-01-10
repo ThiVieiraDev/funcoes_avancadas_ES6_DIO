@@ -8,7 +8,7 @@ class Math {
         return a * b;
     }
     printSum(req, res, a, b){
-        res.load('index', a + b);
+        console.log(res.load('index', a + b));
     }
 }
 

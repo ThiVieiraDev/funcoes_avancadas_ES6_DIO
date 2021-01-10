@@ -1,13 +1,14 @@
 const assert = require('assert');
 const Math = require('./math.js');
 const expect = require('chai').expect;
+const sinon = require('sinon');
 
 let value = 5;
 
 describe('Math class', function () {
     //hooks
     // existe o beforeEach e o afterEach
-    beforeEach(function() {
+    beforeEach(function () {
         value = 0;
     });
 
@@ -24,7 +25,7 @@ describe('Math class', function () {
         });
     });
 
-    it.only('Multiply two numbers', function (){
+    it('Multiply two numbers', function () {
         const math = new Math();
         const obj = {
             name: 'Thiago Vieira'
@@ -38,6 +39,23 @@ describe('Math class', function () {
         // .to.have.property('name')
         // .equal('Thiago Vieira');
         expect(obj).to.deep.equal(obj2);
+    });
 
+    it.only('Calls erq with sum and index values', function () {
+        const req = {};
+        const res = {
+            // load: sinon.spy()
+            load: function load(){
+                console.log("Called!");
+            }
+        };
+        // sinon.spy(res, 'load');
+        sinon.stub(res, 'load').returns('xpto');
+        const math = new Math();
+        math.printSum(req, res, 5, 5);
+        // expect(res.load.calledOnce).to.be.true;
+
+        res.restore();
+        expect(res.load.args[0][1]).to.equal(10);
     });
 });
