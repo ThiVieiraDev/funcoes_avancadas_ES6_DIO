@@ -1,0 +1,23 @@
+{
+  "name": "ES6",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f\u0000u\u0000n\u0000c\u0000o\u0000e\u0000s\u0000_\u0000a\u0000v\u0000a\u0000n\u0000c\u0000a\u0000d\u0000a\u0000s\u0000_\u0000E\u0000S\u00006\u0000_\u0000D\u0000I\u0000O\u0000\r\u0000 \u0000",
+  "main": "async_await.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiVieiraDev/funcoes_avancadas_ES6_DIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiVieiraDev/funcoes_avancadas_ES6_DIO/issues"
+  },
+  "homepage": "https://github.com/ThiVieiraDev/funcoes_avancadas_ES6_DIO#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
