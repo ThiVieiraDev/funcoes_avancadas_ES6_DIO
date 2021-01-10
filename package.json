@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ThiVieiraDev/funcoes_avancadas_ES6_DIO#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.3"
   }
 }
